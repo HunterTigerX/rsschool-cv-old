@@ -33,12 +33,15 @@ Test.assertDeepEquals(count(""), {});
 function count (string) {
 let sortedString = string.split('').sort();
 let fArray = {};
+...
   sortedString.forEach(function(x) {
    let count = 0;
   for (let i = 0; i < sortedString.length; i++){
+...
   if (x == sortedString[i]) {
     count += 1;
   }
+...
     fArray[x] = count;
    }});
    return fArray;
