@@ -29,6 +29,7 @@ What if the string is empty? Then the result should be empty object literal, {}.
 Test.assertDeepEquals(count("aba"), { a: 2, b: 1 });
 Test.assertDeepEquals(count(""), {});
 
+...
 function count (string) {
 let sortedString = string.split('').sort();
 let fArray = {};
@@ -42,6 +43,7 @@ let fArray = {};
    }});
    return fArray;
    }
+...
 
 ## Education and courses
 
