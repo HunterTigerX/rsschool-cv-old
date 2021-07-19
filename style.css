@@ -385,17 +385,8 @@ html {
 
 
   .contentEnd {
-  
-    margin-top: 0;
-  
-    margin-bottom: 10px;
-  
-    padding-bottom: 5px;
-  
-    color: #22282e;
-  
-    border-bottom: 1px solid #eeeeee;
 
-    text-align: center
+    margin: 0 auto; 
+    text-align: center;
   
   }
