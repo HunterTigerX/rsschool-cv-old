@@ -29,24 +29,21 @@ What if the string is empty? Then the result should be empty object literal, {}.
 Test.assertDeepEquals(count("aba"), { a: 2, b: 1 });
 Test.assertDeepEquals(count(""), {});
 
-...
+```javascript
 function count (string) {
 let sortedString = string.split('').sort();
 let fArray = {};
-...
   sortedString.forEach(function(x) {
    let count = 0;
   for (let i = 0; i < sortedString.length; i++){
-...
   if (x == sortedString[i]) {
     count += 1;
   }
-...
     fArray[x] = count;
    }});
    return fArray;
    }
-...
+```
 
 ## Education and courses
 
