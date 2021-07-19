@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Markdown & Git</title>
+</head>
+
+<body>
+  <main class="page-main">
+    <div class="page-main__inner container">
+      <header class="page-main__header">
+        <h1 class="page-main__title">The Rolling Scopes School</h1>
+        <p class="page-main__addition">2021 JS/FE Pre-School</p>
+      </header>
+      <div class="page-main__content content">
+        <h2 class="content__title">Student</h2>
+        <p class="content__txt">Mikita Karalkou (<a class="link"
+            href="https://github.com/HunterTigerX">@HunterTigerX</a>)</p>
+        <h2 class="content__title">Contacts</h2>
+        <ul class="content__list">
+            <li class="content__item"><p class="content__txt">GitHub (<a class="link"
+                href="https://github.com/HunterTigerX">@HunterTigerX</a>)</p></li>
+            <li class="content__item"><p class="content__txt">Telegram: <a class="link" href="https://t.me/HunterTigerX">@HunterTigerX</a></p></li>
+            <li class="content__item"><p class="content__txt">E-mail: <a class="link" href="mailto:HunterTigerX@gmail.com">HunterTigerX@gmail.com</a></p></li>
+          </ul>   
+        <h2 class="content__title">About me</h2>
+        <picture class="content__picture">
+          <source type="image/webp" srcset="img/knrss.webp 1x">
+          <img class="content__user-photo" src="img/knrss.jpg" width="280" height="280" alt="My photo">
+        </picture>
+        <p class="content__txt">
+            I am a technical support specialist with 2+ years of experience working with hardware and software, graduate of the Belarusian State University of Informatics and Radioelectronics and I am planning to become a front-end developer.
+        </p>
+        <h2 class="content__title">My skills</h2>
+        <ul class="content__list">
+          <li class="content__item">Basic HTML 5</li>
+          <li class="content__item">Basic CSS3</li>
+          <li class="content__item">Basic JavaScript</li>
+          <li class="content__item">Basic Git</li>
+          <li class="content__item">Basic Python</li>
+          <li class="content__item">Basic SQL</li>
+        </ul>
+        <br>
+        <h2 class="content__title">Code example</h2>
+        <ul class="codeExample">
+            <li class="codeExample">The main idea is to count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
+                What if the string is empty? Then the result should be empty object literal, {}.
+                <br>
+                <details>
+                    <summary>Solution</summary>
+                    <pre><code>
+                        function count (string) {
+                            let sortedString = string.split('').sort();
+                            let fArray = {};
+                              sortedString.forEach(function(x) {
+                               let count = 0;
+                              for (let i = 0; i < sortedString.length; i++){
+                              if (x == sortedString[i]) {
+                                count += 1;
+                              }
+                                fArray[x] = count;
+                               }});
+                               return fArray;
+                               }
+                    </code></pre>
+                   </details>
+       </li>
+        <h2 class="content__title">Education</h2>
+        <p class="content__txt">Secondary general education Sep 1999 – Jun 2010 Gomel State Linguistic Gymnasium
+        <p class="content__txt">Bachelor's degree at Belarusian State University of Informatics and Radioelectronics
+          Sep, 2010 Jun, 2018 Minsk - Economics and Production Organization (radio electronics and information services)</p>
+          <h2 class="content__title">Completed courses</h2>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/specialization/certificate/E8FCHJCUYS63">[Google IT
+            Support] </a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/PZ8XLTD9HQLH">[Technical Support
+            Fundamentals]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/7YD4S23BZ4TY">[The Bits and Bytes of Computer
+            Networking]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/LR3CU7RHLQYU">[Operating Systems and You:
+            Becoming a Power User]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/CU2U6TGNLWRR">[System Administration and IT
+            Infrastructure Services]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/QY5FH72HKETZ">[IT Security: Defense against
+            the digital dark arts]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/8Y9MRCJ5WEPX">[Architecting with Google
+            Kubernetes Engine: Foundations]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/specialization/certificate/ASJ7EVG75MTL">[Cloud
+            Architecture with Google Cloud]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/specialization/certificate/A3RV9UR95YJ4">[Cloud
+            Engineering with Google Cloud]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/7RTDJLCCCKKW">[Google Cloud Platform
+            Fundamentals: Core Infrastructure]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/GKXMQ94WG92U">[Essential Google Cloud
+            Infrastructure: Foundation]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/MLYRVVCJCCEE">[Essential Google Cloud
+            Infrastructure: Core Services]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/YT7KL3VAZT3F">[Elastic Google Cloud
+            Infrastructure: Scaling and Automation]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/6UNKRQSYYWLA">[Reliable Google Cloud
+            Infrastructure: Design and Process]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/H954L84SPR48">[Preparing for the Google
+            Cloud Professional Cloud Architect Exam]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/KMEX5TZ8X5NP">[Preparing for the Google
+            Cloud Associate Cloud Engineer Exam]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/specialization/certificate/HDDML4LYX77B">[Architecting
+            with Google Compute Engine]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/specialization/6Y2D44HE6489">[Excel Skills for
+            Business]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/Z9WYBP7WL354">[Excel Skills for Business:
+            Essentials]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/DKBFKDKD7EJQ">[Excel Skills for Business:
+            Intermediate I]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/certificate/P2L54QG7KL5H">[Excel Skills for Business:
+            Intermediate II]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/U6SW6RBP2VUY">[Excel Skills for Business:
+            Advanced]</a></p>
+        <p class="content__txt"><a class="link" href="https://www.sololearn.com/Certificate/1060-12080165/pdf/">[SQL
+            Fundamentals course]</a></p>
+        <p class="content__txt"><a class="link"
+            href="https://www.coursera.org/account/accomplishments/records/48L2AD2KW9AG">[Industrial IoT on Google Cloud
+            Platform]</a></p>
+        <p class="content__txt"><a class="link" href="https://ru.code-basics.com">[HTML for beginners]</a></p>
+        <p class="content__txt"><a class="link" href="https://ru.code-basics.com">[CSS for beginners]</a></p>
+        <p class="content__txt"><a class="link" href="https://ru.code-basics.com">[JavaScript for beginners]</a></p>
+        <h2 class="content__title">English</h2>
+        <p class="content__text">I’ve studied English at school and university. Now I usually watch TV series and shows
+          in original voice acting, play computer games and read articles in English. </p>
+      </div>
+    </div>
+    <section class="contentEnd">
+       <article class="contentEnd">
+          <footer>
+            <p>
+                This CV was made 
+              <time datetime="2021-07-19 21:00">July 19 2021</time>
+              by Mikita Karalkou.
+            </p>
+          </footer>
+        </article>
+      </section>
+
+  </main>
+</body>
+
+</html>
